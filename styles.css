@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.keyboard {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.white-key, .black-key {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.white-key {
+    flex: 1;
+    background-color: #fff;
+}
+
+.black-key {
+    flex: 0 0 2.5%;
+    height: 60%;
+    background-color: #000;
+    margin-left: -1.25%;
+    margin-right: -1.25%;
+    z-index: 1;
+}
+
+.black-key:nth-of-type(1), 
+.black-key:nth-of-type(2), 
+.black-key:nth-of-type(4), 
+.black-key:nth-of-type(5), 
+.black-key:nth-of-type(7), 
+.black-key:nth-of-type(8), 
+.black-key:nth-of-type(10), 
+.black-key:nth-of-type(11), 
+.black-key:nth-of-type(13), 
+.black-key:nth-of-type(14), 
+.black-key:nth-of-type(16), 
+.black-key:nth-of-type(17), 
+.black-key:nth-of-type(19), 
+.black-key:nth-of-type(20), 
+.black-key:nth-of-type(22), 
+.black-key:nth-of-type(23), 
+.black-key:nth-of-type(25), 
+.black-key:nth-of-type(26), 
+.black-key:nth-of-type(28), 
+.black-key:nth-of-type(29), 
+.black-key:nth-of-type(31), 
+.black-key:nth-of-type(32), 
+.black-key:nth-of-type(34), 
+.black-key:nth-of-type(35) {
+    margin-right: 0;
+}
+
+
+/* Optional: Style for pressed effect */
+.white-key.pressed {
+    background-color: #ccc; /* Change to pressed color */
+}
+
+.black-key.pressed {
+    background-color: #888; /* Change to pressed color */
+}
